@@ -1,0 +1,33 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav opened mode="side" class="start-content">
+      <mat-toolbar color="primary">  
+      <mat-toolbar-row (click)="irHome()">
+        <span>Prestamos Santa Ana</span>
+      </mat-toolbar-row>
+      </mat-toolbar>
+      <mat-list>
+          <h3 mat-subheader>Paginas</h3>
+          <mat-list-item *ngFor="let item of folders" (click)="irPagina(item)" >
+            <mat-icon mat-list-icon>{{item.icon}}</mat-icon>
+            <h4 mat-line style="color: cornflowerblue" >{{item.name}}</h4>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+          <mat-list-item (click)="salir()" >
+              <mat-icon mat-list-icon>exit_to_app</mat-icon>
+              <h4 mat-line style="color: cornflowerblue" >Salir</h4>
+              <mat-divider></mat-divider>
+            </mat-list-item>
+      </mat-list>
+  </mat-sidenav>
+    <mat-toolbar color="primary">  
+      <mat-toolbar-row>
+        <span>Third Line</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <div class="main-menu">
+    <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-container>

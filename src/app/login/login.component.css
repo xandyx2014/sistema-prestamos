@@ -1,0 +1,16 @@
+mat-card {
+  max-width: 400px;
+  margin-top: 1em;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+img {
+  height: 190px;
+}
+.example-full-width {
+  width: 100%;
+}

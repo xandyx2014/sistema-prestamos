@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-content>
+    <form fxLayout="row wrap" fxLayoutGap="20px">
+      <mat-form-field>
+        <input matInput placeholder="Nombre" >
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Cantidad" >
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Descripcion" >
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Fecha ingreso">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput [matDatepicker]="pickerSalida" placeholder="Fecha Salida">
+          <mat-datepicker-toggle matSuffix [for]="pickerSalida"></mat-datepicker-toggle>
+          <mat-datepicker #pickerSalida></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Descripcion" >
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Categoria</mat-label> 
+          <select matNativeControl required>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button color="primary" mat-raised-button>Crear</button>
+  </mat-card-actions>
+</mat-card>

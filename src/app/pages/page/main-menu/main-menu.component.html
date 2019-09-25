@@ -1,0 +1,14 @@
+<div fxLayout="row wrap" fxLayoutGap="20px">
+<mat-card *ngFor="let item of paginas">
+  <img mat-card-image [src]="item.image" alt="Photo of a Shiba Inu">
+  <mat-card-header>
+    <mat-card-subtitle><mat-icon>{{item.icon}}</mat-icon></mat-card-subtitle>
+    <mat-card-title>{{item.name}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="irPagina(item.url)" mat-raised-button color="accent">Ir Pagina</button>
+  </mat-card-actions>
+</mat-card>
+</div>

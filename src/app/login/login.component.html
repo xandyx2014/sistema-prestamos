@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">  
+    <mat-toolbar-row>
+      <span>Login del Sistema de Prestamos</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div fxLayoutAlign="center center">
+<mat-card>
+  <img mat-card-image src="assets/login.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-header>
+    <mat-card-title>Formulario</mat-card-title>
+    <mat-card-subtitle>login</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+      <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="usuario">
+          </mat-form-field>
+        
+          <mat-form-field class="example-full-width">
+              <input  matInput placeholder="contraseña" type="password">
+          </mat-form-field>
+        </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="irHome()" mat-raised-button color="primary">Login</button>
+  </mat-card-actions>
+</mat-card>
+</div>
